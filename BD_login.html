@@ -20,12 +20,14 @@ permalink: /login/
         var user = document.getElementById("username");
         var pass = document.getElementById("password");
         var data = {username:user, password:pass};
-        fetch("https://spring.nighthawkcodingsociety.com/authenticate", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {
-            if (data.status==200) {
-                window.location.replace("/about/");
-            } else if (data.status==404) {
-                window.location.replace("/about/")
-            }
-        });
+        document.getElementById("login").onclick = function(){
+            fetch("https://spring.nighthawkcodingsociety.com/authenticate", {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)}).then((data) => {
+                if (data.status==200) {
+                    window.location.replace("/about/");
+                } else if (data.status==404) {
+                    window.location.replace("/about/")
+                }
+            });
+        }
     </script>
 </body>

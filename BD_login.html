@@ -6,13 +6,18 @@ permalink: /login/
 
 <head>
     <style>
-        nav {
-            ul {
-              margin: 2;
-              padding: 2;
-              list-style: none;
+    header {
+        padding: 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        div {
+            nav {
+                border: 1px solid #ccc;
+                border-radius: 4px;
             }
         }
+    }
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
@@ -24,12 +29,11 @@ body {
     height: 100vh;
   }
 
-  
     input {
       width: 200px;
       padding: 8px;
       margin: 6px;
-      border: 1px solid #ccc;
+      border: 1px solid #ee1e03;
       border-radius: 4px;
     }
   
@@ -37,7 +41,7 @@ body {
       background-color: #4caf50;
       color: #fff;
       padding: 10px 20px;
-      border: 5px solid;
+      border: 5px solid #ee1e03;
       border-radius: 100px;
       cursor: pointer;
       font-size: 16px;
@@ -48,7 +52,7 @@ body {
     <div>
       <text>Enter your username and password to log in</text> 
     </div>
-    <div>
+    <div id="boxes">
         <text>Username: </text>
         <input id="username"></input>
         <br><text>Password: </text>

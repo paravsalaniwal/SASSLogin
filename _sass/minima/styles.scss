@@ -1,51 +1,66 @@
-$red: #ee1e03;
-header {
-    padding: 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+// Define color variables
+$white: #ffffff;
+$red: #f10c0c;
 
-
-    div {
-        nav {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-    }
-}
+// Global styles
 body {
-font-family: 'Arial', sans-serif;
-background-color: #f0f0f0;
-margin: 0;
-padding: 0;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Header styles
+header {
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  // Nested div inside header
+  div {
+    // Nested nav inside div
+    nav {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  }
+}
+
+// Main content styles
 main {
-    div{
+  // Nested div inside main
+  div {
+    // Nested article inside div
     article {
-div {
-    border: 5px solid $red;
-    border-radius: 4px;
-    input {
-        width: 200px;
-        padding: 8px;
-        margin: 6px;
-        border: 1px solid #0d25fd;
-        border-radius: 4px;
+      // Another nested div inside article
+      form {
+        border: 20px solid #06a53b;
+        border-radius: 10px;
+
+        // Nested input inside div
+        input {
+          width: 200px;
+          padding: 8px;
+          margin: 6px;
+          border: 1px solid #0d25fd;
+          border-radius: 4px;
+        }
+
+        // Nested button inside div
+        button {
+          background-color: #4caf50;
+          color: $white;
+          padding: 10px 20px;
+          border: 5px solid $red;
+          border-radius: 100px;
+          cursor: pointer;
+          font-size: 16px;
+        }
       }
-     
-      button {
-        background-color: #4caf50;
-        color: #fff;
-        padding: 10px 20px;
-        border: 5px solid $red;
-        border-radius: 100px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-}
-}
-}
-}
+    }
+  }
 }
